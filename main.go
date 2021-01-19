@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+
+// NOTE: adding a '&' in front of a variable makes it a pointer to that variable
+// https://stackoverflow.com/questions/3552626/what-does-the-asterisk-do-in-go#:~:text=It%20contains%20the%20memory%20address,that%20it%20is%20a%20pointer.
+// '&' is used to take the address of an object
+// the '*' in front of a type indicates a pointer to that type
+// the '*' in front of a varialbe indicates a pointer dereference - take the value the variable is pointing at
+
 // the value is passed to this function so the original variable cannot be updated within the function
 func zeroOutByValue(intValue int) {
 	intValue = 0
